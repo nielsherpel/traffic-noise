@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Traffic Noise - Status</title>
+  <style>
+    body { font: 14px/1.5 system-ui, sans-serif; margin: 2rem; max-width: 640px; color: #1a1a1a; background: #fff; }
+    h1 { font-size: 1.2rem; }
+    .row { display: flex; justify-content: space-between; padding: .35rem 0; border-bottom: 1px solid #eee; }
+    .k { color: #666; }
+    .v { font-weight: 600; }
+    button { font: inherit; padding: .5rem .9rem; margin: .3rem .4rem .3rem 0; cursor: pointer; }
+    ul { padding-left: 1.1rem; }
+    li { color: #444; }
+    .note { color: #888; font-size: .85rem; margin-top: 1.5rem; }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #1e1e1e; }
+      .row { border-color: #333; }
+      .k, li { color: #aaa; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Traffic Noise</h1>
+
+  <div class="row"><span class="k">Surft gerade</span><span class="v" id="surfing">-</span></div>
+  <div class="row"><span class="k">Idle-Status</span><span class="v" id="idle">-</span></div>
+  <div class="row"><span class="k">Besuche heute</span><span class="v" id="count">-</span></div>
+  <div class="row"><span class="k">Aktive Themen heute</span><span class="v" id="themes">-</span></div>
+  <div class="row"><span class="k">Pausiert</span><span class="v" id="paused">-</span></div>
+
+  <p>
+    <button id="pause">Pause umschalten</button>
+    <button id="visit">Jetzt einen Testbesuch</button>
+    <button id="refresh">Aktualisieren</button>
+  </p>
+
+  <h2 style="font-size:1rem">Letzte Aufrufe</h2>
+  <ul id="recent"><li>-</li></ul>
+
+  <p class="note">
+    Reine Statusanzeige. Einstellungen werden in <code>config.js</code> geaendert
+    (danach Add-on unter about:debugging neu laden).
+  </p>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# web-ext build output
+web-ext-artifacts/
+*.xpi
+*.zip
+
+# AMO upload state
+.amo-upload-uuid
+
+# node
+node_modules/
+
+# never commit account/credential material
+*.pem
+*secret*
+*Backup authentication codes*
+amo-api-*.txt
+
+# editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,7 @@
+{
+  "categories": ["privacy-security"],
+  "summary": "Erzeugt im Hintergrund Surf-Traffic ueber viele Themen, damit das echte Surfverhalten schwerer zu profilieren ist. Keine sichtbare Oberflaeche.",
+  "version": {
+    "license": "MPL-2.0"
+  }
+}
