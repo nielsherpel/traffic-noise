@@ -1,0 +1,2 @@
+npm install --global web-ext
+web-ext sign --channel=listed --api-key=user:20139081:687 --api-secret=914c2ea7cc2ace7cc8532f4da183e4c042b7e85d14cc13e6429b6e61a13008c7
